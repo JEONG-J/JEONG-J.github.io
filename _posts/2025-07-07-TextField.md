@@ -72,12 +72,10 @@ struct ContentView: View {
 }
 ``` 
 
-<br>
 <div align="center">
 <img src="/assets/img/TextField/step1.png" width="600" alt="텍스트 필드1"/>
 </div>
 
-<br>
 
 SwiftUI에서 TextField는 다양한 초기화 방식을 제공합니다.
 #### 기본형
@@ -91,6 +89,7 @@ TextField("텍스트 필드 기본", text: $text)
 ### prompt
 * iOS 15 이상에서 추가된 prompt 파라미터입니다.
 * prompte는 ViewBuilder를 통해 동적인 뷰를 넣을 수 있도록 합니다.
+
 ```swift
 TextField("프롬프트 입력", text: $text, prompt: prompt)
 ```
@@ -98,6 +97,7 @@ TextField("프롬프트 입력", text: $text, prompt: prompt)
 ### Label
 * 레이블을 직접 커스터마이징하는 초기화 방식입니다.
 * prompt 뷰를 직접 레이블로 지정할 수 있습니다.
+
 ```swift
 TextField(text: $text, label: {
     prompt
@@ -108,6 +108,7 @@ TextField(text: $text, label: {
 * value와 formatter를 사용하는 초기화 방식입니다.
 * 텍스트 입력을 숫자나 날짜 같은 비문자형 값에 바인딩할 때 사용합니다.
 * numberFormatter(=문자열) <-> 숫자 변환 처리
+
 ```swift
 TextField("포매터 숫자 입력", value: $num, formatter: numberFormatter)
 
@@ -118,8 +119,9 @@ private var numberFormatter: NumberFormatter {
            formatter.maximumFractionDigits = 2
            return formatter
     }
-
 ```
+
+<br>
 
 > <font color="#ff0000">prompt와 label의 차이가 무엇일까요?</font>
 > 1. prompt는 입력 값이 비어있을 때, 보여주는 시각적 안내 텍스트입니다.
@@ -169,9 +171,8 @@ iOS 15 이후에는 .padding(), .background(), 등을 이용하여 직접 꾸미
 >        }
 ```
 
-<br>
 <div align="center">
 <img src="/assets/img/TextField/step2.png" width="600" alt="텍스트 필드2"/>
 </div>
 
-<br>
+
