@@ -25,7 +25,6 @@ hidden: false
 * [😃 TextField 기본 사용](#-textfield-기본-사용)
 * [🙂 TextFieldStyle](#-textfieldstyle)
 * [🙃 그 외 TextField Modifier](#-그-외-textfield-modifier)
-* 
 
 # 🤔 TextField?
 ---
@@ -130,7 +129,7 @@ private var numberFormatter: NumberFormatter {
 
 <br>
 
-> <font color="#ff0000">prompt와 label의 차이가 무엇일까요?</font>
+> **<font color="#ff0000">prompt와 label의 차이가 무엇일까요?</font>**
 > 1. prompt는 입력 값이 비어있을 때, 보여주는 시각적 안내 텍스트입니다.
 > 2. label은 VoiceOver를 위한 이름이거나, 커스터마이징된 레이블 역할입니다.
 > 즉, 시각적 프롬프트와 접근성 라벨을 명확히 구분하는 것이 더 바람직하기 때문에 분리한 것입니다.
@@ -227,7 +226,7 @@ import Foundation
    }
 ```
 
-<font color="#ff0000">**왜 @restoractive를 사용했을까요?**</font> <br>
+**<font color="#ff0000">왜 @restoractive를 사용했을까요?</font>** <br>
 @retroactive는 Swift에서 기존 타입을 외부 라이브러리 없이 프로토콜 채택하게 할 때 사용하는 기능입니다. <br>
 즉, UIGestureRecognizerDelegate를 채택하게 설정해서 다른 제스처와 동시에 인식되지 않도록 하기 위함입니다!
 
@@ -313,7 +312,7 @@ onSubmitLabel과 onSubmit, focuesd를 잘 활용하면 키보드 흐름과 일�
 > https://developer.apple.com/documentation/swiftui/view/textinputautocapitalization(_:) <br>
 > 사용자가 TextField에 텍스트를 입력할 때, 어떤 경우에 자동으로 대문자를 적용할지 지정하는 데 사용됩니다..!
 
-<font color="#ff0000">**우리는 언제 사용해야할까요?**</font>
+**<font color="#ff0000">우리는 언제 사용해야할까요?</font>**
 * 아이디, 이메일, 주소, URL 등 대소문자를 구분하거나 대문자가 필요 없는 입력에 사용합니다.
 
 ```swift
