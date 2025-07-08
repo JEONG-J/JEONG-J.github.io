@@ -187,7 +187,7 @@ var body: some View {
 TextField에는 여러가지 수정자들이 있습니다. 입력 동작이나 입력 환경을 제어하는 데 사용합니다.
 
 ### 1. KeyboardType
-> https://developer.apple.com/documentation/uikit/uikeyboardtype
+> https://developer.apple.com/documentation/uikit/uikeyboardtype <br>
 > 키보드 타입을 설정하는 데 사용합니다.
 
 TextField를 탭하면 키보드는 자동으로 올라오지만,
@@ -227,16 +227,16 @@ import Foundation
    }
 ```
 
-**왜 @restoractive를 사용했을까요?** <br>
+<font color="#ff0000">**왜 @restoractive를 사용했을까요?**</font> <br>
 @retroactive는 Swift에서 기존 타입을 외부 라이브러리 없이 프로토콜 채택하게 할 때 사용하는 기능입니다. <br>
 즉, UIGestureRecognizerDelegate를 채택하게 설정해서 다른 제스처와 동시에 인식되지 않도록 하기 위함입니다!
 
 ### 2. submitLabel
-> https://developer.apple.com/documentation/swiftui/submitlabel
+> https://developer.apple.com/documentation/swiftui/submitlabel <br>
 > 키보드의 return 버튼에 표시될 라벨을 설정합니다.
 
 ### 3. onSubmit
-> https://developer.apple.com/documentation/assignables/assignabledocumentview/onsubmit(of:_:)
+> https://developer.apple.com/documentation/assignables/assignabledocumentview/onsubmit(of:_:) <br>
 > 사용자가 return 키를 눌렀을 때의 동작을 정의합니다.
 
 ```swift
@@ -251,7 +251,7 @@ submitLabel을 사용해서 사용자가 어떤 동작을 기대해야 하는지
 onSubmit을 통해 Return 키를 눌렀을 때 실행할 동작을 정의합니다..!
 
 ### 4. focused
-> https://developer.apple.com/documentation/swiftui/view/focused(_:)
+> https://developer.apple.com/documentation/swiftui/view/focused(_:) <br>
 > 텍스트 필드의 포커스 여부를 제어하거나 감지합니다.
 
 기본 사용법은 아래와 같습니다.
@@ -309,12 +309,11 @@ struct SignUpView: View {
 ```
 
 onSubmitLabel과 onSubmit, focuesd를 잘 활용하면 키보드 흐름과 일치, 사용자 경험의 자연스러움을 가질 수 있습니다!
-
 ### 5. textInputAutocapitalization
-> https://developer.apple.com/documentation/swiftui/view/textinputautocapitalization(_:)
+> https://developer.apple.com/documentation/swiftui/view/textinputautocapitalization(_:) <br>
 > 사용자가 TextField에 텍스트를 입력할 때, 어떤 경우에 자동으로 대문자를 적용할지 지정하는 데 사용됩니다..!
 
-**우리는 언제 사용해야할까요?**
+<font color="#ff0000">**우리는 언제 사용해야할까요?**</font>
 * 아이디, 이메일, 주소, URL 등 대소문자를 구분하거나 대문자가 필요 없는 입력에 사용합니다.
 
 ```swift
