@@ -9,23 +9,23 @@ categories:
   - Development
   - Navigation
 tags:
-  - SwiftLibrary
-  - SocialLogin
+  - SwiftUI
+  - Navigation
 toc: true
 toc_sticky: true
-data: 2025-07-04
-last_modified_at: 2025-07-04
+data: 2025-09-08
+last_modified_at: 2025-09-08
 image:
   path: /assets/img/Navigation/NavigatoinRouter.png
 featured: true
 hidden: false
 ---
 
-# 목차
+## 목차
 - [목차](#목차)
-  - [NavigationRoutable](#navigationroutable)
-  - [NavigationDestination](#navigationdestination)
-  - [NavigationRoutingView](#navigationroutingview)
+- [🤔 NavigationRoutable](#-navigationroutable)
+- [☺️ NavigationDestination](#️-navigationdestination)
+- [😁 NavigationRoutingView](#-navigationroutingview)
 
 <br>
 앱을 개발하다 보면 화면 전환은 가장 기본적이다
@@ -35,7 +35,7 @@ hidden: false
 이때 유용한 접근법이 **<font color="#ff0000">네비게이션 라우터</font>** 입니다. 네비게이션 라웉는 화면 이동 로직을 한곳에 모아 관리하면서 화면 전환의 흐름을 더 직관적으로 확장 가능하게 설계할 수 있도록 도와준다. 단순히 `다음 화면으로 가기` 를 넘어서<font color="#ff0000"> 앱의 전체적인 이동 경로를 설계 하는 중심축</font>이 된다.
 
 
-## NavigationRoutable
+## 🤔 NavigationRoutable
 > 네비게이션 라우터는 복잡한 화면 로직을 각 뷰에 흩뿌리지 않고, 한 곳에서 일관되게 관리하려는 목적이다. NavigationRouter는 화면 이동의 "규칙"과 "흐름"을 캡슐화해 뷰는 "무엇을 보여줄지"에만 집중하게 만든다
 
 ```swift
@@ -73,7 +73,7 @@ class NavigationRouter: NavigationRoutable {
 * `push/pop/popToRootView`
 	* 스택 조작을 메서드로 감싸 일관된 진입점을 제공한다. 화면에서 직접 배열을 만지지 않고, 항상 라우터를 거치게 하여 규칙을 중앙화한다.
 
-## NavigationDestination
+## ☺️ NavigationDestination
 > Navigation Stack에서 특정 데이터 타입에 따라 화면 전환을 정의한다.
 > 앱 전체에서 발생할 수 있는 네비게이션 목적지를 한곳에 모아 타입 안전하게 관리한다.
 
@@ -121,7 +121,7 @@ enum NaivgatoinDestination: Hashable {
 
 이 NavigationDestination라는 열거형 값을 받아서 그 목적지에 맞는 실제 화면을 연결해주는 "라우팅 전담 뷰"를 만들어서 사용해야 한다.
 
-## NavigationRoutingView
+## 😁 NavigationRoutingView
 > NavigationDestination은 목적지 정의만 담당한다. NavigationRoutingView는 목적지를 화면으로 변환만 담당한다.
 
 앱 전체 화면 이동은 NavigationDestination이라는 열거형으로 정의되며, 이 값은 어떤 화면으로 이동해야 하는가? 라는 추상적인 목적지를 표현한다
