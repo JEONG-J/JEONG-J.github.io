@@ -2,11 +2,12 @@
 layout: post
 title: SwiftUI 커스텀 폰트 적용하기
 description: SwiftUI에 커스텀 폰트를 만들고 사용하기
-featuredImage: 
-excerpt: "SwiftLibrary : CustomFont"
+featuredImage:
+excerpt: "SwiftUI : CustomFont"
 writer: JEONG Eui chan
 categories:
   - Development
+  - Font
 tags:
   - SwiftUI
   - Font

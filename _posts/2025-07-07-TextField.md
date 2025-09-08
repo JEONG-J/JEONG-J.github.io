@@ -2,11 +2,12 @@
 layout: post
 title: SwiftUI 텍스트 필드 알아보기
 description: SwiftUI 텍스트 필드의 기본적인 사용
-featuredImage: 
+featuredImage:
 excerpt: "SwiftUI : TextField"
 writer: JEONG Eui chan
 categories:
   - Development
+  - UI
 tags:
   - SwiftUI
   - TextField

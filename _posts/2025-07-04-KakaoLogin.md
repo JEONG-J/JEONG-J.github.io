@@ -2,11 +2,12 @@
 layout: post
 title: SwiftUI 카카오톡 로그인
 description: SwiftUI에서 카카오톡 소셜 로그인을 위한 Xcode에 연결
-featuredImage: 
+featuredImage:
 excerpt: "SwiftLibrary : KakaoLogin"
 writer: JEONG Eui chan
 categories:
   - Development
+  - SocialLogin
 tags:
   - SwiftLibrary
   - SocialLogin

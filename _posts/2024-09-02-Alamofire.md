@@ -2,11 +2,12 @@
 layout: post
 title: Alamofire 익히기
 description: Swift 라이브러리 Alamofire
-featuredImage: 
+featuredImage:
 excerpt: "SwiftLibrary : Alamofire"
 writer: JEONG Eui chan
 categories:
   - Development
+  - Alamofire
 tags:
   - SwiftLibrary
   - Alamofire
